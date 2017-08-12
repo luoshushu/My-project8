@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三栏布局</title>
+
+    <style>
+        body,html{
+            width: 100%;
+        }
+        .right,.left{
+            width: 200px;
+            height: 500px;
+        }
+        .left{
+            background: red;
+            float: left;
+
+        }
+        .medium{
+            height: 700px;
+            background: darkblue;
+            width: calc(100% - 400px);
+            margin: 0 auto;
+
+            /*第二种*/
+            /*margin-right: 200px;*/
+            /*margin-left: 200px;*/
+
+        }
+        .right{
+            background: darkgreen;
+            float: right;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="left">左</div>
+
+<div class="right">右</div>
+<div class="medium">中</div>
+
+</body>
+</html>
